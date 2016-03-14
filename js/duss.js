@@ -90,6 +90,7 @@ $(".nav.navbar-nav > li").click(function (e) {
   var destination = link[link.length - 1].substring(1, link[link.length - 1].length);
 
   $("html, body").animate({scrollTop: $("#" + destination).offset().top }, 1200);
+  $("#query").focus();
 
   // This is a life savor.
   e.target.blur();
