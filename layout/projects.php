@@ -59,17 +59,42 @@ $projects = array(
 		"content" => "<p><em>The George LaGrange Cook Photograph Collection</em> presents negatives of various business, churches, public buildings, and residences in both Charleston and Summerville, S.C. Taken in the late 1880s and early 1890s by George LaGrange Cook, son of the famous Civil War photographer George Smith Cook, these photos provide a unique look at life and living conditions in these significant cities, and the South more generally, as the New South emerged at the end of the 19th century.</p>"
 	),
 	array(
+		"thumb" => "oldsouthernorchards.png",
+		"header" => "Old Southern Orchards",
+		"website" => "http://lichen.csd.sc.edu/oldsouthernorchards/index.php",
+		"content" => "<p><em>Old Southern Orchards</em> </p>"
+	),
+	array(
 		"thumb" => "ravenel.png",
 		"header" => "Plants and Planters - Henry William Ravenel",
 		"website" => "http://tundra.csd.sc.edu/ravenel/",
 		"content" => "<p><em>Plants and Planter</em> connects the life, travels, business pursuits, and scientific work of one of the great minds of the 19th century, Henry William Ravenel. A prolific traveler, collector and cataloger of botanical specimens, Ravenel had many species named for him, and was considered to have specific expertise in North American fungi. Besides his scientific work, Ravenel was a prolific diarist, and his diaries provide one of the most complete pictures of daily life in the mid-19th century South we have. <em>Plants and Planter</em> brings together Ravenel's personal diaries, correspondence, and over 6,200 botanical specimens, providing us with a detailed portrait of science, self, and society in the 19th-century South.</p>"
 	),
 	array(
+		"thumb" => "",
+		"header" => "SC e-Archives",
+		"website" => "../SC_e-Archives.html",
+		"content" => ""
+	),
+	array(
+		"thumb" => "",
+		"header" => "SC Historic Properties Record",
+		"website" => "../SC_Historical_Properties.html",
+		"content" => ""
+	),
+	array(
+		"thumb" => "",
+		"header" => "SC Online Records Index",
+		"website" => "../SC_Online_Records.html",
+		"content" => ""
+	),
+	/*,// The Southern Periodical Humor Repository may be added back at a later date
+	array(
 		"thumb" => "sphr.png",
 		"header" => "Southern Periodical Humor Repository",
 		"website" => "http://library.sc.edu/sphr/",
 		"content" => "<p>Between the 1830s and the outbreak of the Civil War, \"southwestern humor\" was one of the most popular genres of American fiction. While largely forgotten outside of academic circles, southwestern humors continues to influence our conceptions America and the South into the 21<sup>st</sup> century. As America expanded west of the Appalachians after the Louisiana Purchase, the frontier of the \"Old Southwest\"&mdash;those states we now tend to associate with the Deep South&mdash;sparked the imagination of Americans up and down the Eastern Seaboard. Many talented writers used this frontier as the setting for some truly original short fictions. These works prefigured the biting humor of Mark Twain and later generations of great American humorists, and helped shape our ideas about rugged individualism, honor and violence, and swaggering masculinity that we still associate with the West, the Western genre, and the rural South. The goal of the <em>Southern Periodical Humor Repository</em> is to collect forgotten southwestern humor published in newspapers and periodicals, much of which never found publication in books. Currently, it houses works published between 1845 and 1848 in Columbia, SC's <em>The South Carolinian</em>; we hope to collect works from more periodicals as the project matures.</p>"
-	)
+	)*/
 	// array(
 	// 	"thumb" => "civil-rights.png",
 	// 	"header" => "Civil Rights in South Carolina",
@@ -78,8 +103,7 @@ $projects = array(
 	// )
 );
 
-?>
-<section class="container-fluid" id="projects">
+?><section class="container-fluid" id="projects">
 	<div class="positioner">
 		<div class="row">
 
@@ -87,12 +111,12 @@ $projects = array(
 			<div class="col-sm-4 project-listing text-center">
 
 				<?php if (isset($project["thumb"]) && file_exists("img/thumb/" . $project["thumb"]) && $project["thumb"] != ""): ?>
-					<img src="img/thumb/<?php echo $project['thumb']; ?>" class="img-responsive center-block" alt="<?php echo $project['header']; ?>">
+					<img src="img/thumb/<?php echo $project['thumb']; ?>" class="img-responsive center-block carouselimg" alt="<?php echo $project['header']; ?>">
 				<?php else: ?>
 					<img src="http://placehold.it/200x200" class="img-responsive center-block">
 				<?php endif; ?>
 
-				<h3><?php echo $project["header"]; ?></h3>
+				<h3 class="text"><?php echo $project["header"]; ?></h3>
 			</div>
 			<?php endforeach; ?>
 
