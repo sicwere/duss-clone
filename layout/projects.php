@@ -74,19 +74,19 @@ $projects = array(
 		"thumb" => "",
 		"header" => "SC e-Archives",
 		"website" => "../SC_e-Archives.html",
-		"content" => ""
+		"content" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in nunc dapibus, finibus sem ac, tristique metus."
 	),
 	array(
 		"thumb" => "",
 		"header" => "SC Historic Properties Record",
 		"website" => "../SC_Historical_Properties.html",
-		"content" => ""
+		"content" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in nunc dapibus, finibus sem ac, tristique metus."
 	),
 	array(
 		"thumb" => "",
 		"header" => "SC Online Records Index",
 		"website" => "../SC_Online_Records.html",
-		"content" => ""
+		"content" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in nunc dapibus, finibus sem ac, tristique metus."
 	),
 	/*,// The Southern Periodical Humor Repository may be added back at a later date
 	array(
