@@ -62,7 +62,12 @@ $projects = array(
 		"thumb" => "oldsouthernorchards.png",
 		"header" => "Old Southern Orchards",
 		"website" => "http://lichen.csd.sc.edu/oldsouthernorchards/index.php",
-		"content" => "<p><em>Old Southern Orchards</em> </p>"
+		"content" => "<p><em>Old Southern Orchards</em> serves as a companion to <em>American Heritage Vegetables</em>, and provides information 
+		about the most consequential fruits grown in the South prior to the Great Depression.  There were a multitude of varieties grown in the 
+		region that would become the American South from the colonial era onward.  Some were native (plums, pawpaws, persimmons), 
+		some introduced from Europe. Yet there were relatively few that mattered decades on end, in town and city markets throughout the region.  
+		This site documents those durable, marketable varieties.  However splendid a family apple, a local pawpaw, a seedling peach, if it could 
+		not command the interest of the broader public, it does not appear here.</p>"
 	),
 	array(
 		"thumb" => "ravenel.png",
