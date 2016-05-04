@@ -6,6 +6,21 @@
  * Copyright: 2015. All Rights Reserved.
  */
 
+ /**
+ * Fades Project Icons.
+ */
+ /*	This does not work correctly on Firefox, thus it is commented out.
+ $(document).ready(function() {
+  
+$("img.carouselimg").hover(
+function() {
+$(this).stop().animate({"opacity": "1"}, "fast");
+},
+function() {
+$(this).stop().animate({"opacity": ".7"}, "fast");
+});
+});
+*/
 /**
  * Function to be called once the window has finished loaded.
  */
@@ -34,8 +49,8 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 10000,
     dots: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     responsive: [ {
       breakpoint: 768,
       settings: {
@@ -90,7 +105,6 @@ $(".nav.navbar-nav > li").click(function (e) {
   var destination = link[link.length - 1].substring(1, link[link.length - 1].length);
 
   $("html, body").animate({scrollTop: $("#" + destination).offset().top }, 1200);
-  $("#query").focus();
 
   // This is a life savor.
   e.target.blur();
@@ -270,4 +284,21 @@ function contactAlert(alertClass, text) {
   if (!alert.is(":visible")) {
     alert.slideDown();
   }
+}
+
+function changeOpacity(i,f)
+{
+	var imgs = document.getElementsByClassName('carouselimg');
+	for(var x=0;x<imgs.length;x++)
+	{
+		if(f)
+		{
+			if(i===imgs[x])
+				i.style.opacity = 1.0;
+			else
+				imgs[x].style.opacity = 0.7;
+		}
+		else
+			imgs[x].style.opacity = 0.7;	
+	}
 }
