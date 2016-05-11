@@ -74,6 +74,24 @@ $projects = array(
 		"header" => "Plants and Planters - Henry William Ravenel",
 		"website" => "http://tundra.csd.sc.edu/ravenel/",
 		"content" => "<p><em>Plants and Planter</em> connects the life, travels, business pursuits, and scientific work of one of the great minds of the 19th century, Henry William Ravenel. A prolific traveler, collector and cataloger of botanical specimens, Ravenel had many species named for him, and was considered to have specific expertise in North American fungi. Besides his scientific work, Ravenel was a prolific diarist, and his diaries provide one of the most complete pictures of daily life in the mid-19th century South we have. <em>Plants and Planter</em> brings together Ravenel's personal diaries, correspondence, and over 6,200 botanical specimens, providing us with a detailed portrait of science, self, and society in the 19th-century South.</p>"
+	),
+	array(
+		"thumb" => "",
+		"header" => "SC e-Archives",
+		"website" => "",
+		"content" => "SC e-Archives"
+	),
+	array(
+		"thumb" => "",
+		"header" => "SC Historical Properties",
+		"website" => "",
+		"content" => "SC Historical Properties"
+	),
+	array(
+		"thumb" => "",
+		"header" => "SC Online Records",
+		"website" => "",
+		"content" => "SC Online Records"
 	)/*,// The Southern Periodical Humor Repository may be added back at a later date
 	array(
 		"thumb" => "sphr.png",
@@ -97,8 +115,7 @@ $projects = array(
 			<div class="col-sm-4 project-listing text-center">
 
 				<?php if (isset($project["thumb"]) && file_exists("img/thumb/" . $project["thumb"]) && $project["thumb"] != ""): ?>
-					<img src="img/thumb/<?php echo $project['thumb']; ?>" class="img-responsive center-block carouselimg" alt="<?php echo $project['header']; ?>" 
-						onmouseover="changeOpacity(this,true);" onmouseout="changeOpacity(this,false);">
+					<img src="img/thumb/<?php echo $project['thumb']; ?>" class="img-responsive center-block carouselimg" alt="<?php echo $project['header']; ?>" >
 				<?php else: ?>
 					<img src="http://placehold.it/200x200" class="img-responsive center-block">
 				<?php endif; ?>
