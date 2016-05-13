@@ -163,6 +163,8 @@ section > i.fa {
 	    -ms-transform: translateY(30%);
 	        transform: translateY(30%);
 }
+
+.navbar-nav > li > .dropdown > button,
 .navbar-nav > li > a {
 	padding-left: 30px;
 	padding-right: 30px;
@@ -175,11 +177,30 @@ section > i.fa {
 	-webkit-transition: 0.35s ease-in-out;
 	        transition: 0.35s ease-in-out;
 }
+
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus,
 .navbar-nav > li > a.active {
 	border-bottom: 1px solid red;
 	background-color: transparent;
+}
+
+.navbar-nav > li > .dropdown > button {
+	text-transform: uppercase;
+	margin-top:7.54px;
+	padding-bottom:15.9px;
+}
+
+.navbar-nav > li > .dropdown > button:hover,
+.navbar-nav > li > .dropdown > button:focus,
+.navbar-nav > li > .dropdown > button.active {
+	border-bottom: 1px solid red;
+	background-color: transparent;
+	text-decoration:none;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
 }
 
 /**
@@ -388,7 +409,7 @@ font-size: 18px;
   max-width: 100%;
   height: auto;
   opacity: 0.7;
-   transition: opacity .25s ease-in-out;
+   /*transition: opacity .25s ease-in-out;
    -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;*/
 }
